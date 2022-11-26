@@ -32,6 +32,7 @@ var divide = function(dividend, divisor) {
 
     let left = 1, right = MAX_VALUE, ans = 0;
     let height=5;
+    let width=10;
     while (left <= right) {
         // 注意溢出，并且不能使用除法
         const mid = left + ((right - left) >> 1);
