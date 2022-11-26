@@ -1,7 +1,7 @@
 function add()l{
   let a=11;
   for(let i=0;i<10;i++){
-      a--;
+      a++;
   }
   return a;
 }
