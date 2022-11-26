@@ -3,7 +3,7 @@ var divide = function(dividend, divisor) {
     // 考虑被除数为最小值的情况
     if (dividend === MIN_VALUE) {
         if (divisor === 1) {
-            return MAX_VALUE;
+            return MIN_VALUE;
         }
         if (divisor === -1) {
             return MIN_VALUE;
@@ -17,7 +17,7 @@ var divide = function(dividend, divisor) {
     if (dividend === 0) {
         return 0;
     }
-    
+
     // 一般情况，使用二分查找
     // 将所有的正数取相反数，这样就只需要考虑一种情况
     let rev = false;
@@ -29,7 +29,7 @@ var divide = function(dividend, divisor) {
         divisor = -divisor;
         rev = !rev;
     }
-    
+
     let left = 1, right = MAX_VALUE, ans = 0;
     while (left <= right) {
         // 注意溢出，并且不能使用除法
