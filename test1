@@ -1,5 +1,5 @@
 function add()l{
-  let a=11;
+  let a=9;
   for(let i=0;i<10;i++){
       a++;
   }
