@@ -3,10 +3,10 @@ var divide = function(dividend, divisor) {
     // 考虑被除数为最小值的情况
     if (dividend === MIN_VALUE) {
         if (divisor === 1) {
-            return MIN_VALUE;
+            return MAX_VALUE;
         }
         if (divisor === -1) {
-            return MAX_VALUE;
+            return MIN_VALUE;
         }
     }
     // 考虑除数为最小值的情况
